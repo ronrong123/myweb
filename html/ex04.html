@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="ex04.jsp" method="GET">
+            <p>아이디 :
+                <input type="text" name="user_id" id="user_id">&nbsp;<input type="button" value="ID중복검사" onclick="alert('사용가능한ID')">
+            </p>
+            <p>생년월일:
+                <input type="date" name="date" id="date">
+            </p>
+            <p>성별:
+                <input type="radio" name="sex" value="male">남자
+                <input type="radio" name="sex" value="famale">여자
+            </p>
+            <p>
+                E-mail:
+                <input type="email" name="email">
+            </p>
+            <p>메일수신:
+                <input type="radio" name="emailselect" value="수신동의">수신동의
+                <input type="radio" name="emailselect" value="수신거부">수신거부
+            </p>
+            <p>핸드폰: &nbsp;<select name="phone">
+                    <option value="010">010</option>
+                    <option value="011">011</option>
+                    <option value="02">02</option>
+                </select>&nbsp;<input type="text" name="phone">
+                -
+                <input type="text" name="phone"></p>
+            <p>직업:
+                <select name="job">
+                    <option value="학생">학생</option>
+                    <option value="직장인">직장인</option>
+                    <option value="주부">주부</option>
+                    <option value="백수">백수</option>
+                </select>
+            </p>
+            <p>취미:
+                <input type="checkbox" name="subject" value="쇼핑">쇼핑
+                <input type="checkbox" name="subject" value="인터넷">인터넷
+                <input type="checkbox" name="subject" value="음악감상">음악감상
+                <input type="checkbox" name="subject" value="독서">독서
+                <input type="checkbox" name="subject" value="스포츠">스포츠</p>
+            <p>자기소개:
+                <textarea
+                    name="textarea"
+                    cols="50"
+                    rows="5"
+                    placeholder="입력하세요"
+                    autofocus="autofocus"></textarea>
+            </p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시적기">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radio</title>
+</head>
+
+<body>
+    <form action="radio.jsp" method="GET">
+        <h3>당신의 성별은 무엇입니까?</h3>
+        <input type="radio" name="sex" id="male" value="male" checked>남자
+        <input type="radio" name="sex" id="famale" value="famale">여자
+        <p></p>
+        <h3>당신은 몇 학년입니까?</h3>
+        <input type="radio" name="year" value="1" checked>1학년
+        <input type="radio" name="year" value="2">2학년
+        <input type="radio" name="year" value="3">3학년
+        <input type="radio" name="year" value="4">4학년
+        <!-- name: parameter이름 value: 불러오는값 -->
+        <p></p>
+        <h3>현재 관심을 가지고 있는 학습 주제는 무엇입니까?</h3>
+        <input type="checkbox" name="subject" value="HTML5" checked>HTML5<br>
+        <input type="checkbox" name="subject" value="CSS3">CSS3<br>
+        <input type="checkbox" name="subject" value="Javascript">Javascript<br>
+        <input type="checkbox" name="subject" value="Jquery">Jquery
+        <p></p>
+        <input type="submit" value="제출">
+        <input type="reset" value="다시작성">
+    </form>
+</body>
+
+</html>
