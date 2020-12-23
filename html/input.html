@@ -1,21 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <form action="input.jsp" method="GET">
-        사용자명: <input type="text" name="user_name" id="user_name">
-        <br>
-        아이디: <input type="text" name="user_id" id="user_id">
-        <br>
-        비밀번호: <input type="password" name="user_pw" id="user_pw">
-        <br>
-        <input type="submit" value="입력">
-        <input type="reset" value="취소">
-    </form>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+        <style>
+            /* ^= : 시작하는값 */
+            /* [type^='t'] {
+                background: #01ffd5;
+            } */
+            *{box-sizing: border-box;font-family: 'Noto Sans KR', sans-serif;}
+            div{width:40%;margin:0 auto;background: #fff;height: 500px;border-radius: 5px;}
+            div h1{text-align: center;padding:30px 0;font-weight: 400;}
+            label{font-size: 18px;width:20%;height: 50px;display: inline-block;}
+            input[type="text"]{padding:12px;margin-top:10px;width:79%;border:none;border-bottom:1px solid #ccc;margin:10px 0;}
+            input[type="text"]:focus{background: #eaecea;color:rgba(0,0,0,0.5);box-shadow: 1px 1px 5px rgba(0,0,0,0.3);}
+            input[type="password"]{padding:12px;margin-top:10px;width:79%;border:none;border-bottom:1px solid #ccc;}
+            input[type="password"]:focus{background: #eaecea;color:rgba(0,0,0,0.5);box-shadow: 1px 1px 5px rgba(0,0,0,0.3);}
+            nav{margin:0 auto;margin-top:30px;width:50%;}
+            nav input{width:46%;border:1px solid #383b38;padding:10px 12px;color: rgba(48, 44, 44, 0.9);cursor: pointer;margin-right: 10px;background: none;}
+            nav input:hover {background: #383b38;color:#fff;transition: 0.3s;}        
+            form{width: 100%;border-top:1px solid rgb(236, 236, 236);padding-top:30px;}                
+        </style>
+    </head>
+    <body>
+        <div>
+            <h1>로그인</h1>
+            <form action="input.jsp" method="GET">
+                <label for="name">사용자명</label>
+                <input type="text" name="user_name" id="user_name" placeholder="사용자명 . . .">
+                <br>
+                <label for="id">아이디</label>
+                <input type="text" name="user_id" id="user_id" placeholder="아이디 . . .">
+                <br>
+                <label for="pw">비밀번호</label>
+                <input type="password" name="user_pw" id="user_pw" placeholder="비밀번호 . . .">
+                <nav>
+                    <input type="submit" value="입력">
+                    <input type="reset" value="취소">
+                </nav>
+            </form>
+        </div>
+    </body>
 </html>

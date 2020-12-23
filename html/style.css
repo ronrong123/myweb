@@ -1,0 +1,14 @@
+*{background: rgb(98, 104, 98);}
+#test1{color:rgb(229, 255, 0);font-size: 13px;}
+#test2 h1{background: yellowgreen;}
+#test2 h2{background: green;}
+#test2 h3{background: pink;}
+#test2 p{color:red;}
+
+.class1{color: blue;background: yellow;}
+.class2{color: red;background: rgb(0, 238, 255);}
+h3.class1{color:navy;background: pink;}
+
+#id1{color: blue;background: pink;}
+#id2{color: blue;background: yellow;}
+h2#id1{color: red;background: green;}

@@ -5,10 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>html/links.html</title>
+    <style>
+        a:link{color: tomato;text-decoration: underline;}
+        a:visited{color:rgb(247, 0, 255);}
+        a:hover{text-decoration: overline;}
+        a:active{color:deepskyblue;}
+        ul li:hover{color: rgb(255, 106, 0);}
+        ol li:nth-last-child(3){background:cyan ;}
+        li:first-child{border:3px dotted tomato;}
+        li:nth-child(1){border: 2px solid green;}
+        li:nth-of-type(2){border:2px dotted greenyellow;}
+        /* nth-of-type() : ul을 넣으면 ul 순번만   */
+    </style>
 </head>
 
 <body>
-    <a href="link.html" target="_blank">link페이지</a>
+    <a href="link.html" target="_self">link페이지</a>
 
 
     <h2>UL 리스트</h1>

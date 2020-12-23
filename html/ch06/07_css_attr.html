@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1[text]{
+            color: tomato;
+            background: gray;
+        }
+        p[text]{color:blue;background: yellowgreen;}
+        h1[text="attr3"]{color:greenyellow; background: hotpink;}
+
+        p[text]{color: tomato;}
+        p[text="hello"]{background: none;}
+        p[text="red"]{color: yellow;background: purple;}
+        p[text~="bb"]{color:yellow;background: green;}
+        p[text|=a1]{color: yellow;background: blue;}
+        p[text^="img"]{color: yellow;background: tomato;}
+        p[text$=".png"]{color:yellow;background: gray;}
+        p[text*="ong"]{color: yellow;background: pink;}
+    </style>
+</head>
+<body>
+    <h1 text="attr1">text 속성 이름 선택자</h1>
+    <h1 text="attr2">text 속성 이름 선택자</h1>
+    <p text="attr3">text 속성 이름 선택자</p>
+    <h1 text="attr3">속성과 속성값 선택자</h1>
+    <p>속성 선택 없음</p>
+    
+    <h2>Text Selector</h2>
+    <p text="hello">모든 텍스트</p>
+    <p text="ted">텍스트 매칭 속성</p>
+    <p text="aa bb cc">리스트 매칭 속성</p>
+    <p text="a1-a2-a3">범위 텍스트 매칭 속성</p>
+    <p text="img/pic.jpg">텍스트 시작 매칭 속성</p>
+    <p text="img/pic.png">텍스트 끝 매칭 속성</p>
+    <p text="Seongyong Hong">텍스트 패턴 매칭 속성</p>
+</body>
+</html>

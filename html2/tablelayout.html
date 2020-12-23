@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td, th{border: 1px solid black;}
+        #tb1{border:2px solid tomato;table-layout: auto;border-collapse: separate;border-spacing:10px;caption-side: top;}
+        #tb2{border:3px dotted teal;background: yellowgreen;table-layout: fixed;border-collapse: collapse;caption-side: bottom;}
+        #tb3{border:3px solid maroon;background: aqua;border-spacing: 20px 40px;}
+        #tb4{border-collapse: separate;empty-cells: hide;}
+        #tb5{border-collapse: separate;empty-cells:show;}
+        caption{font-size: 12px;color:rgba(0,0,0,0.8);margin:5px;}
+
+    </style>
+</head>
+<body>
+    <h2>table layout auto 예제</h2>
+    <table id="tb1">
+        <caption>[table 1-1] </caption>
+        <tr>
+            <th>table layout auto</th>
+            <td>내용 분량에 따라서 자동으로 조절</td>
+        </tr>
+    </table>
+    <h2>table layout fixed 예제</h2>
+    <table id="tb2" width="250px">
+        <caption>[table1-2]</caption>
+        <tr>
+            <th>table layout fixed</th>
+            <td>내용 분량과 상관 없이 고정</td>
+        </tr>
+    </table>
+    <table id="tb3">
+        <tr>
+            <th>table border-spacing</th>
+            <td>20px 40px</td>
+        </tr>
+    </table>
+    <h2>빈 셀을 보이게 하거나 숨기기</h2>
+    <table id="tb4" border="1" width="300px">
+        <tr>
+            <td>국어</td>
+            <td>영어</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td></td>
+        </tr>
+    </table>
+    <p/>
+    <table id="tb5" border="1" width="300px">
+        <tr>
+            <td>국어</td>
+            <td>영어</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>
