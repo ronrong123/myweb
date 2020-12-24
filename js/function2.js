@@ -5,11 +5,13 @@
 // }
 // function은 이벤트를 줄때 호출함
 // nameFunc();
+
+
+// 입력받은 두수 사이의 합 : 15,25를 적으면 15~25사이의 합
 let name1 = window.prompt('숫자를 입력하세요.');
 let name2 = window.prompt('숫자를 입력하세요');
 
 diffSum(name1, name2); 
-// 입력받은 두수 사이의 합 : 15,25를 적으면 15~25사이의 합
 
 function diffSum(a, b){
     let sum = 0;

@@ -5,13 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <!-- <script src="js/array.js"></script> -->
+        <style>
+            *{box-sizing: border-box;}
+            table{border:2px solid #000;border-collapse: collapse;table-layout: fixed;width:300px;text-align: center;box-shadow: 2px 2px 5px rgba(0,0,0,0.1);}
+            table tr th{background: #dddedf;font-weight: 400;}
+            table tr th, td{padding:10px 15px;border:1px solid #ccc;}
+        </style>
     </head>
     <body>
-        <div id="show">Hello</div>
+        <div id="show">Main 페이지 입니다.</div><p/>
+        <!-- 과일: <input type="text" id="fruit"" value="melon"><br> -->
+
+
+        결과: <input id="result"><br>
+        <p/>
+        이름: <input type="text" id="name" value="홍길동"><br>
+        나이: <input type="text" id="age" value="15"><br>
+        취미: <input type="text" id="hobby" value="독서"><br><p/>
+        <button onclick="input_friend()">입력</button>
+        <table id="friends" border="1">
+            <tr>
+                <th>이름</th>
+                <th>나이</th>
+                <th>취미</th>
+            </tr>
+        </table>
+        <script src="js/function3_01.js"></script>
         <!-- <input type="text" id="name" onchange="nameFunc()"> -->
         <!-- onchange:값이 바뀔때 실행 -->
-        <script src="js/function3.js"></script>
+        <!-- <script src="js/function3.js"></script> -->
         <!-- <script src="js/array.js"></script> -->
+        <!-- <script src="js/function4.js"></script> -->
         <!-- <img src="https://www.w3schools.com/js/pic_bulboff.gif">
         <button onclick="turnOn()">Turn On</button>
         <button onclick="turnOff()">Turn Off</button> -->

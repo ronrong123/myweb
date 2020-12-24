@@ -19,16 +19,6 @@ let friend3 = {
 
 let friends = [friend1, friend2, friend3];
 
-document.write('<style>table{margin-top:20px;border:4px dotted #ffcc00;border-collapse:collapse;text-align:center;}table tr td{padding:10px 20px;border-color:#000;}table tr th{padding:10px 20px;background:#ffcc00;font-weight:400;border-color:#000;}</style>');
-document.write('<table border="1">');
-document.write('<tr><th>이름</th><th>나이</th><th>취미</th></tr>');
-for (let i = 0; i <= friends.length; i++) {
-    document.write('<tr><td>' + friends[i].name + '</td><td>' + friends[i].age + '</td><td>' + friends[i].hobby + '</td></tr>');
-}
-document.write('</table>');
-
-document.write('##########################################');
-
 document.write('<table border="1"><tr>');
 for (field in friend1) {
     document.write('<th>' + field + '</th>');
@@ -42,6 +32,17 @@ for (friend of friends) {
     document.write('</tr>');
 }
 document.write('</table>');
+
+document.write('##########################################');
+
+document.write('<style>table{margin-top:20px;border:4px dotted #ffcc00;border-collapse:collapse;text-align:center;}table tr td{padding:10px 20px;border-color:#000;}table tr th{padding:10px 20px;background:#ffcc00;font-weight:400;border-color:#000;}</style>');
+document.write('<table border="1">');
+document.write('<tr><th>이름</th><th>나이</th><th>취미</th></tr>');
+for (var i = 0; i <= friends.length;i++) {
+    document.write('<tr><td>' + friends[i].name + '</td><td>' + friends[i].age + '</td><td>' + friends[i].hobby + '</td></tr>');
+}
+document.write('</table>');
+
 
 let numbers = [3, 4, 8, 9, 12, 83, 22];
 let sum = 0;
