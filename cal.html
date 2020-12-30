@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="show"></div>
+    <script>
+        function createHeader(a, b, c) {
+            let thTag = document.createElement('th');
+            thTag.innerHTML = a;
+            trTag.append(thTag);
+            tableTag.append(trTag);
+        }
+        function createData(item, idx, ary) {
+            if (idx % 7 == 5 || idx ==0) {
+                trTag = document.createElement('tr');
+            }
+            if(idx == 0){
+                let tdTag = document.createElement('td');
+                tdTag.innerHTML = ''
+                trTag.append(tdTag);
+                tdTag = document.createElement('td');
+                tdTag.innerHTML = ''
+                trTag.append(tdTag);                
+            }
+            let tdTag = document.createElement('td');
+            tdTag.innerHTML = item;
+            trTag.append(tdTag);
+            tableTag.append(trTag);
+        }
+        let days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'];
+        let dates = [];
+        for (let i = 1; i <= 31; i++) {
+            dates.push(i);
+        }
+        let tableTag = document.createElement('table');
+        tableTag.setAttribute('border', '1');
+        tableTag.setAttribute('id', 'tdl');
+        document.getElementById('show').append(tableTag);
+        let trTag = document.createElement('tr');
+        days.forEach(createHeader);
+        dates.forEach(createData);
+        document.getElementById('show').append(tableTag);
+
+
+        // for(day of days){
+        //     let h = document.createElement('h1');
+        //     h.innerHTML = day;
+        //     document.getElementById('show').append(h);
+        // }
+        //     let tbTag = document.createElement('table');
+        //     tbTag.setAttribute('border','1');
+        //     let trTag = document.createElement('tr');
+        //     tbTag.append(trTag);
+        // for(day of days){            
+        //     let thTag = document.createElement('th');
+        //     thTag.innerHTML = day;
+        //     trTag.append(thTag);
+        //     thTag.style.backgroundColor = '#ffcc00';
+        //     thTag.style.color='#fff';
+        // }
+
+        // let tr = document.createElement('tr');
+        // for(let i=1;i<31;i++){
+        //     let td = document.createElement('td');
+        //     td.innerHTML = i;
+        //     tr.append(td);    
+        //     if(i%7==0) {
+        //         td.style.color ='skyblue';
+        //         td.style.fontWeight = '900';
+        //         tbTag.append(tr);
+        //         tr = document.createElement('tr');
+        //     }else if(i%7==1){
+        //         td.style.color = 'tomato';
+        //         td.style.fontWeight = '900';
+        //         td.style.background ='#fdc9c6';
+        //     }
+        // }
+        // tbTag.append(tr);
+        // document.getElementById('show').append(tbTag);
+    </script>
+</body>
+
+</html>
